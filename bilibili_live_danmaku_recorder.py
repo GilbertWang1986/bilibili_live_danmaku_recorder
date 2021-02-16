@@ -105,8 +105,13 @@ if __name__ == '__main__':
 
     import sys
 
+    id_77 = 21828604
+
     if len(sys.argv) == 1:
-        print( 'ID of liveroom is needed' )
+        print( 'ID of liveroom is needed, or Liveroom 21828604 would be recorded' )
+        print( 'Room ID:', id_77 )
+        print( 'Time for retry: %f s'%(75) )
+        fetch_danmakus(id_77)
     elif len(sys.argv) == 2:
         room_id = int(sys.argv[1])
         print( 'Room ID:', room_id )
@@ -119,7 +124,7 @@ if __name__ == '__main__':
         print( 'Time for retry: %f s'%(retry) )
         fetch_danmakus(room_id, retry)
 
-    id_77 = 21828604
+    
 
    
 
